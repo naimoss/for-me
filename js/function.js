@@ -1,3 +1,26 @@
+jQuery(document).ready(function($){
+
+$('.live-search-list li').each(function(){
+$(this).attr('data-search-term', $(this).text().toLowerCase());
+});
+
+$('.live-search-box').on('keyup', function(){
+
+var searchterm = $(this).val().toLowerCase();
+
+    $('.live-search-list li').each(function(){
+
+        if ($(this).filter('[data-search-term *= ' + searchterm + ']').length > 0 || searchterm.length < 1) {
+            $(this).show();
+        } else {
+            $(this).hide();
+        }
+
+    });
+
+});
+
+});
 $('.ndfHFb-c4YZDc-Wrql6b').remove();
 $('.sub-menu ul').hide();
 $(".sub-menu a").click(function () {
