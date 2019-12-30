@@ -1,3 +1,19 @@
+          $(&quot;.submenu&quot;).click(function () {
+  $(this).children(&quot;ul&quot;).slideToggle();
+});
+$(&quot;ul&quot;).click(function (ev) {
+  ev.stopPropagation();
+});
+var ATTRIBUTES = [&#39;myvalue&#39;, &#39;myvar&#39;, &#39;bb&#39;];
+$(&#39;[data-toggle=&quot;modal&quot;]&#39;).on(&#39;click&#39;, function (e) {
+  var $target = $(e.target);
+  var modalSelector = $target.data(&#39;target&#39;);
+  ATTRIBUTES.forEach(function (attributeName) {
+    var $modalAttribute = $(modalSelector + &#39; #modal-&#39; + attributeName);
+    var dataValue = $target.data(attributeName);
+    $modalAttribute.text(dataValue || &#39;&#39;);
+  });
+});
 jQuery(document).ready(function($){
 
 $('.live-search-list li').each(function(){
