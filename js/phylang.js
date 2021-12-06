@@ -646,12 +646,12 @@ $(document).ready(function(){
 	var admobid = {}
 if (/(android)/i.test(navigator.userAgent)) {  // for android & amazon-fireos
   admobid = {
-   // banner: 'ca-app-pub-2103221276430615/8678935835',
-   // interstitial: 'ca-app-pub-2103221276430615/8678935835',
+   // banner: 'XXXca-app-pub-2103221276430615/8678935835',
+   // interstitial: 'XXXca-app-pub-2103221276430615/8678935835',
   }
 } else if (/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {  // for ios
   admobid = {
-    banner: 'ca-app-pub-2103221276430615/8678935835',
+    banner: 'XXXca-app-pub-2103221276430615/8678935835',
     interstitial: '',
   }
 }
@@ -679,8 +679,8 @@ $(document).ready(function(){
 	var admobid = {};
 	if( /(android)/i.test(navigator.userAgent) ) { 
 		admobid = { 
-			banner: 'ca-app-pub-2103221276430615/8862205646',
-			interstitial: 'ca-app-pub-2103221276430615/8678935835'
+			banner: 'XXXca-app-pub-2103221276430615/8862205646',
+			interstitial: 'XXXca-app-pub-2103221276430615/8678935835'
 		};
 	}
 	
