@@ -647,8 +647,8 @@ $(document).ready(function(){
 	var admobid = {}
 if (/(android)/i.test(navigator.userAgent)) {  // for android & amazon-fireos
   admobid = {
-  //banner: 'xxca-app-pub-2103221276430615/8678935835',
-   //interstitial: 'xxca-app-pub-2103221276430615/8678935835',
+  //banner: 'ca-app-pub-2103221276430615/8678935835',
+   //interstitial: 'ca-app-pub-2103221276430615/8678935835',
   }
 } else if (/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {  // for ios
   admobid = {
