@@ -658,12 +658,17 @@ if (/(android)/i.test(navigator.userAgent)) {  // for android & amazon-fireos
 
 document.addEventListener('deviceready', function() {
 
-
   admob.interstitial.config({
     id: admobid.interstitial,
+   
     autoShow: true,
   })
-  admob.interstitial.prepare() }
+  admob.interstitial.prepare()
+
+ 
+    admob.interstitial.show()
+
+}, false)
 
 
 }); 
