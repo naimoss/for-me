@@ -664,9 +664,10 @@ document.addEventListener('deviceready', function() {
     id: admobid.interstitial,
     autoShow: true,
   })
-function showverlay() {
-  admob.interstitial.prepare() }
-setTimeout(showverlay, 4000) 
+  admob.interstitial.prepare()
+
+ 
+    admob.interstitial.show()
 }, false)
 
 }); 
