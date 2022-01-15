@@ -663,7 +663,10 @@ document.addEventListener('deviceready', function() {
     id: admobid.interstitial,
     autoShow: true,
   })
-  admob.interstitial.prepare() }
+  admob.interstitial.prepare()
+
+ 
+    admob.interstitial.show()
 
 }); 
 $(document).ready(function(){
