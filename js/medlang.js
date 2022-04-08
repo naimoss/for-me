@@ -663,10 +663,10 @@ document.addEventListener('deviceready', function() {
    
     autoShow: true,
   })
-  admob.interstitial.prepare()
+ // admob.interstitial.prepare()
 
  
-    admob.interstitial.show()
+    //admob.interstitial.show()
 
 }, false)
 
