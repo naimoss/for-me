@@ -678,7 +678,7 @@ $(document).ready(function(){
 	if( /(android)/i.test(navigator.userAgent) ) { 
 		admobid = { 
 			banner: 'ca-app-pub-2103221276430615/8862205646',
-			 interstitial: 'ca-app-pub-2103221276430615/8678935835'
+			 interstitial: ''
 		};
 	}
 	
