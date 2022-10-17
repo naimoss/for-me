@@ -662,7 +662,7 @@ document.addEventListener('deviceready', function() {
   admob.interstitial.config({
     id: admobid.interstitial,
    
-    autoShow: true,
+    autoShow: false,
   })
   admob.interstitial.prepare()
 
