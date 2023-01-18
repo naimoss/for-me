@@ -1,4 +1,10 @@
+window.onload = function() {
+ 
 
+
+Swal.fire('Nous sommes désolés, il y a trop erreurs dans ces moments, nous mettons à jour cette application, nous annoncerons bientôt une mise à jour massive ❤️')
+
+};
 function changeLang(lang_string) {
     
 	
