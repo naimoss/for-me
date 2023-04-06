@@ -8,4 +8,5 @@ $('a#mob').each(function(){ this.href=this.href.replace('https://docs.google.com
   text: 'Désolé, cette version a rencontré de nombreuses erreurs, très peu de documents. Veuillez mettre à jour vers la dernière version pour continuer à utiliser l"application. Merci',
   footer: '<a href="market://details?id=com.sciences.medecine" style="font-size: large;color: #f00; ">Cliquez ici pour mettre à jour</a>'
 })
-    }
+    } 
+
