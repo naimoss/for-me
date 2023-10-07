@@ -646,8 +646,8 @@ $(document).ready(function(){
 	var admobid = {}
 if (/(android)/i.test(navigator.userAgent)) {  // for android & amazon-fireos
   admobid = {
-    banner: 'ca-app-pub-2103221276430615/2858924670',
-   interstitial: 'ca-app-pub-2103221276430615/2858924670',
+    banner: 'ca-app-pub-2103221276430615/6961253960',
+   interstitial: 'ca-app-pub-2103221276430615/6961253960',
   }
 } else if (/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {  // for ios
   admobid = {
@@ -679,8 +679,8 @@ $(document).ready(function(){
 	var admobid = {};
 	if( /(android)/i.test(navigator.userAgent) ) { 
 		admobid = { 
-			banner: 'ca-app-pub-2103221276430615/2858924670',
-			interstitial: 'ca-app-pub-2103221276430615/2858924670'
+			banner: 'ca-app-pub-2103221276430615/6961253960',
+			interstitial: 'ca-app-pub-2103221276430615/6961253960'
 		};
 	}
 	
