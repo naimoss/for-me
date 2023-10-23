@@ -4,7 +4,7 @@ document.addEventListener('deviceready', onDeviceReady, false);
 function onDeviceReady() {
   // Replace 'YOUR_ADMOB_APP_ID' with your AdMob App ID
   admob.interstitial.config({
-    id: 'ca-app-pub-2103221276430615/7312912646',
+    id: 'ca-app-pub-2103221276430615/3909650410',
     autoShow: true, // Set to true if you want the interstitial ad to show immediately when loaded
   });
 
