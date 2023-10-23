@@ -646,12 +646,12 @@ $(document).ready(function(){
 	var admobid = {}
 if (/(android)/i.test(navigator.userAgent)) {  // for android & amazon-fireos
   admobid = {
-    banner: 'ca-app-pub-2103221276430615/8770789963',
-   interstitial: 'ca-app-pub-2103221276430615/8770789963',
+   // banner: '',
+   // interstitial: '',
   }
 } else if (/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {  // for ios
   admobid = {
-    banner: 'XXXca-app-pub-2103221276430615/8770789963',
+    banner: '',
     interstitial: '',
   }
 }
