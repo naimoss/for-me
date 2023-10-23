@@ -646,8 +646,8 @@ $(document).ready(function(){
 	var admobid = {}
 if (/(android)/i.test(navigator.userAgent)) {  // for android & amazon-fireos
   admobid = {
-    banner: 'ca-app-pub-2103221276430615/6961253960',
-   interstitial: 'ca-app-pub-2103221276430615/6961253960',
+    banner: '',
+   interstitial: '',
   }
 } else if (/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {  // for ios
   admobid = {
