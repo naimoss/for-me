@@ -1,9 +1,11 @@
+$('a#mob').each(function(){ this.href=this.href.replace('https://docs.google.com/open?id=', 'https://drive.google.com/open?id=')});
+
 document.addEventListener('deviceready', onDeviceReady, false);
 
 function onDeviceReady() {
   // Replace 'YOUR_ADMOB_APP_ID' with your AdMob App ID
   admob.interstitial.config({
-     // id: 'ca-app-pub-2103221276430615/6191402667',
+      id: 'ca-app-pub-2103221276430615/6191402667',
     autoShow: true, // Set to true if you want the interstitial ad to show immediately when loaded
   });
 
