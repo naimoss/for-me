@@ -8,7 +8,7 @@ function onDeviceReady() {
     autoShow: true, // Set to true if you want the interstitial ad to show immediately when loaded
   });
 
-  // Function to check if it's time to show the interstitial ad
+  // Function to check if it's time to show the interstitial  ad
   function shouldShowInterstitial() {
     const lastShownTimestamp = localStorage.getItem('lastInterstitialTimestamp');
     if (!lastShownTimestamp) {
