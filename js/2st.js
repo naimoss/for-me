@@ -1,3 +1,4 @@
+
 $('a#mob').each(function(){ this.href=this.href.replace('https://docs.google.com/open?id=', 'market://details?id=com.dst.edu&')});
 
    window.onload = function() {
