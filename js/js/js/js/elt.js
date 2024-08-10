@@ -6,7 +6,7 @@ let cleanText = () => {
 
 // WARNING config must be an array[] not an object{}
 const bannerConfig = [
-    adUnitId = "ca-app-pub-2103221276430615/9770133171",
+    adUnitId = " ",
     position = "bottom-center",
     size = "BANNER",
     collapsible = "bottom",
@@ -44,7 +44,7 @@ let showBannerAd = () => {
 
   const config_Interstitial = [
 
-  adUnitId = "ca-app-pub-2103221276430615/6961253960",
+  adUnitId = " ",
 
   autoShow = true
 
