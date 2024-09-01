@@ -94,7 +94,7 @@ function showInterstitialIfNeeded() {
   const lastAdShownTime = getAdShownTime();
   const currentTime = new Date().getTime();
 
-  if (!lastAdShownTime || (currentTime - lastAdShownTime) >= 5 * 60 * 1000) {
+  if (!lastAdShownTime || (currentTime - lastAdShownTime) >= 3 * 60 * 1000) {
     loadInterstitialAd();
     showInterstitialAd();
     setAdShownTime();
@@ -109,6 +109,6 @@ document.addEventListener("deviceready", function(){
 
     // Set up the interval after the initial delay
     setInterval(showInterstitialIfNeeded, 4 * 60 * 1000);
-  }, 2 * 60 * 1000); 
+  }, 3 * 60 * 1000); 
 }, false);
 
