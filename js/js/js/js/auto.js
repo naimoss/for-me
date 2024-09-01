@@ -94,7 +94,7 @@ function showInterstitialIfNeeded() {
   const lastAdShownTime = getAdShownTime();
   const currentTime = new Date().getTime();
 
-  if (!lastAdShownTime || (currentTime - lastAdShownTime) >= 5 * 60 * 1000) {
+  if (!lastAdShownTime || (currentTime - lastAdShownTime) >= 4 * 60 * 1000) {
     loadInterstitialAd();
     showInterstitialAd();
     setAdShownTime();
