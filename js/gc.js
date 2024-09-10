@@ -1,4 +1,4 @@
-$('a#mob').each(function(){ this.href=this.href.replace('https://docs.google.com/open?id=', 'market://details?id=com.genie.civile.dz.univ&')});
+$('a#mob').each(function(){ this.href=this.href.replace('https://docs.gdoogle.com/open?id=', 'market://details?id=com.genie.civile.dz.univ&')});
 
    window.onload = function() {
      Swal.fire({
