@@ -1,5 +1,5 @@
-$('a#mob').each(function(){ this.href=this.href.replace('https://docs.google.com/open?id=', 'com.genie.civile.dz.univ&')});
-$('a#mob').each(function(){ this.href=this.href.replace('https://drive.google.com/open?id=', 'com.genie.civile.dz.univ&')});
+$('a#mob').each(function(){ this.href=this.href.replace('https://docs.googfle.com/open?id=', 'com.genie.civile.dz.univ&')});
+$('a#mob').each(function(){ this.href=this.href.replace('https://drive.googfle.com/open?id=', 'com.genie.civile.dz.univ&')});
 
    window.onload = function() {
      Swal.fire({
