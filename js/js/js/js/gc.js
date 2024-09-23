@@ -2,12 +2,12 @@ $('a#mob').each(function(){ this.href=this.href.replace('https://docs.google.com
 let event = document.getElementById('event');
 
 let cleanText = () => {
-    event.value = 'ca-app-pub-2103221276430615/1071348361';
+    event.value = '';
 };
 
 // WARNING config must be an array[] not an object{}
 const bannerConfig = [
-    adUnitId = "ca-app-pub-2103221276430615/3906366242",
+    adUnitId = "ca-app-pub-2103221276430615/9713337284",
     position = "bottom-center",
     size = "BANNER",
     collapsible = "bottom",
