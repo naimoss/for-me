@@ -7,7 +7,7 @@ let cleanText = () => {
 
 // WARNING config must be an array[] not an object{}
 const bannerConfig = [
-    adUnitId = "ca-app-pub-2103221276430615/5809823000",
+    //adUnitId = "ca-app-pub-2103221276430615/5809823000",
     position = "bottom-center",
     size = "BANNER",
     collapsible = "bottom",
