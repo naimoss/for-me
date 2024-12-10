@@ -120,57 +120,80 @@ window.addEventListener('beforeunload', () => {
 
 
 
-let interstitial;
-let lastInterstitialTimestamp = Date.now(); // Track the last time an interstitial was shown
 
-// Function to check and show the interstitial ad
-const checkAndShowInterstitial = async () => {
-    const currentTime = Date.now();
-    if (currentTime - lastInterstitialTimestamp >= 240000) { // 4 minutes
-        try {
-            if (await interstitial.isLoaded()) {
-                await interstitial.show(); // Show the interstitial
-                console.log('Interstitial ad displayed.');
-                lastInterstitialTimestamp = currentTime; // Update the timestamp
-            } else {
-                console.log('Interstitial ad not loaded. Reloading...');
-                await interstitial.load();
-            }
-        } catch (error) {
-            console.error('Error displaying interstitial ad:', error);
-        }
-    }
-};
 
 document.addEventListener('deviceready', async () => {
-    // Initialize the InterstitialAd instance
+    let interstitial;
+
     try {
+        // Initialize the InterstitialAd instance
         interstitial = new admob.InterstitialAd({
-            adUnitId: 'ca-app-pub-2103221276430615/4357900688', // Replace with your interstitial Ad Unit ID
+            adUnitId: 'ca-app-pub-2103221276430615/4357900688', // Test Ad Unit ID
         });
 
+        // Load the interstitial ad
         await interstitial.load();
+        console.log("Interstitial ad loaded.");
 
-        // Periodic check for interstitial
-        setInterval(checkAndShowInterstitial, 60000); // Check every minute
-
-        // Reload interstitial on dismiss
+        // Reload interstitial after dismiss
         interstitial.on('dismiss', async () => {
-            console.log('Interstitial ad dismissed.');
+            console.log('Interstitial ad dismissed. Reloading...');
             try {
-                await interstitial.load(); // Reload for next use
+                await interstitial.load();
                 console.log('Interstitial ad reloaded.');
             } catch (error) {
                 console.error('Error reloading interstitial ad:', error);
             }
         });
 
-        // Handle app resume to check interstitial
-        document.addEventListener('resume', async () => {
-            console.log('App resumed.');
-            await checkAndShowInterstitial();
-        });
     } catch (error) {
-        console.error('Error with interstitial ad:', error);
+        console.error('Error initializing interstitial ad:', error);
+        return; // Stop execution if ad initialization fails
     }
+
+    // Initialize click count in sessionStorage if not set
+    if (!sessionStorage.getItem('clickCount')) {
+        sessionStorage.setItem('clickCount', 0);
+    }
+
+    let clickCount = parseInt(sessionStorage.getItem('clickCount'));
+
+    // Track clicks on links with id="mob"
+    document.querySelectorAll('a#mob').forEach(link => {
+        link.addEventListener('click', async () => {
+            clickCount++;
+            sessionStorage.setItem('clickCount', clickCount); // Update sessionStorage
+
+            console.log(`Click count: ${clickCount}`);
+
+            // Show alert and interstitial for every 3 clicks
+            if (clickCount % 2 === 0) {
+                alert(`You have clicked ${clickCount} times on links with id='mob'.`);
+                console.log('Attempting to display interstitial ad.');
+
+                if (interstitial && interstitial.isLoaded()) {
+                    try {
+                        await interstitial.show();
+                        console.log('Interstitial ad displayed.');
+                    } catch (error) {
+                        console.error('Error displaying interstitial ad:', error);
+                    }
+                } else {
+                    console.log('Interstitial ad not loaded. Skipping display.');
+                }
+            }
+        });
+    });
+
+    // Prevent back navigation with an alert
+    window.addEventListener('popstate', () => {
+        if (clickCount >= 2) {
+            alert("You have clicked 3 times on links with id='mob' and tried to go back.");
+            window.history.pushState(null, document.title, window.location.href); // Prevent back navigation
+        }
+    });
+
+    // Push an initial state to prevent immediate back navigation
+    window.history.pushState(null, document.title, window.location.href);
 });
+
