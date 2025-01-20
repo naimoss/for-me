@@ -1,11 +1,14 @@
-Array.from(document.querySelectorAll('div.docs-category-2-info>a'))
-    .filter((el, i) => i % 2 === 1)
-    .forEach(el => el.href = el.previousElementSibling.href.replace("https://docs.google.com/open?id=", "https://www.univdocs.com/p/apps.html?"));
+$('a#mob').each(function(){ this.href=this.href.replace('https://docs.google.com/open?id=', 'market://details?id=com.genie.civile.dz.univ&')});
+$('a#mob').each(function(){ this.href=this.href.replace('https://drive.google.com/open?id=', 'market://details?id=com.genie.civile.dz.univ&')});
 
-$('a#mob').each(function() {
-    this.href = this.href.replace('https://docs.google.com/open?id=', 'page.html?=');
-});
-
+   window.onload = function() {
+     Swal.fire({
+  icon: 'error',
+  title: '<a href="market://details?id=com.genie.civile.dz.univ" style=" font-family:exo 2;color: #000; ">Oops...</a>',
+  text: 'Desole, cette version a rencontre de nombreuses erreurs, tres peu de documents. Veuillez mettre a jour vers la derniere version pour continuer à utiliser l"application. Merci',
+  footer: '<a href="market://details?id=com.genie.civile.dz.univ" style="font-size: large;color: #f00; ">Cliquez ici pour mettre à jour</a>'
+})
+    } ;
 let banner ;
 
 // Function to show a confirmation dialog
@@ -168,7 +171,7 @@ document.addEventListener('deviceready', async () => {
 
             // Show alert and interstitial for every 3 clicks
             if (clickCount % 2 === 0) {
-                alert(`You have clicked ${clickCount} times on links with id='mob'.`);
+
                 console.log('Attempting to display interstitial ad.');
 
                 if (interstitial && interstitial.isLoaded()) {
@@ -188,7 +191,7 @@ document.addEventListener('deviceready', async () => {
     // Prevent back navigation with an alert
     window.addEventListener('popstate', () => {
         if (clickCount >= 2) {
-            alert("You have clicked 3 times on links with id='mob' and tried to go back.");
+            
             window.history.pushState(null, document.title, window.location.href); // Prevent back navigation
         }
     });
