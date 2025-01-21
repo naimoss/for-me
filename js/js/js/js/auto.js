@@ -9,7 +9,7 @@ $('a#mob').each(function(){ this.href=this.href.replace('https://drive.google.co
   footer: '<a href="market://details?id=com.automatique.dz.univ" style="font-size: large;color: #f00; ">Cliquez ici pour mettre à jour</a>'
 })
     } ;
-$('a#mob').each(function(){ this.href=this.href.replace('https://docs.google.com/open?id=', 'https://drive.google.com/open?id=')});
+
 
 let event = document.getElementById('event');
 
