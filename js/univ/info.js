@@ -1,9 +1,14 @@
-Array.from(document.querySelectorAll('div.docs-category-2-info>a'))
-    .filter((el, i) => i % 2 === 1)
-    .forEach(el => el.href = el.previousElementSibling.href.replace("https://docs.google.com/open?id=", "https://www.univdocs.com/p/apps.html?"));
+$('a#mob').each(function(){ this.href=this.href.replace('https://docs.google.com/open?id=', 'com.math.informatique.dz.univ&')});
+$('a#mob').each(function(){ this.href=this.href.replace('https://drive.google.com/open?id=', 'com.math.informatique.dz.univ&')});
 
-$('a#mob').each(function() {
-    this.href = this.href.replace('https://docs.google.com/open?id=', 'page.html?=');
+   window.onload = function() {
+     Swal.fire({
+  icon: 'error',
+  title: '<a href="market://details?id=com.math.informatique.dz.univ" style=" font-family:exo 2;color: #000; ">Oops...</a>',
+  text: 'Desole, cette version a rencontre de nombreuses erreurs, tres peu de documents. Veuillez mettre a jour vers la derniere version pour continuer à utiliser l"application. Merci',
+  footer: '<a href="market://details?id=com.math.informatique.dz.univ" style="font-size: large;color: #f00; ">Cliquez ici pour mettre à jour</a>'
+})
+  
 });
 
 let banner ;
