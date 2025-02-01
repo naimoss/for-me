@@ -1,6 +1,7 @@
 
 $('a#mob').each(function(){ this.href=this.href.replace('https://docs.google.com/open?id=', 'market://details?id=com.tam.docs&')});
 $('a#mob').each(function(){ this.href=this.href.replace('https://drive.google.com/open?id=', 'market://details?id=com.tam.docs&')});
+$('a').each(function(){ this.href=this.href.replace('https://drive.google.com/open?id=', 'market://details?id=com.tam.docs&')});
 
    window.onload = function() {
   Swal.fire({
