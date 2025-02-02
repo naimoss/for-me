@@ -2,7 +2,7 @@ $('a#mob').each(function(){ this.href=this.href.replace('https://docs.google.com
 
 document.addEventListener('deviceready', function () {
     let interstitial;
-    const Interstitial_ID = 'ca-app-pub-2103221276430615/1607134670'; // Replace with actual Ad Unit ID
+    const Interstitial_ID = 'ca-app-pub-2103221276430615/1607134670'; // Replace  with actual Ad Unit ID
 
     function loadInterstitial() {
         try {
