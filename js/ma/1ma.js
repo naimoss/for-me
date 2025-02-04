@@ -1,7 +1,7 @@
 $('a#mob').each(function(){ this.href=this.href.replace('https://docs.google.com/open?id=', 'https://drive.google.com/open?id=')});
 document.addEventListener('deviceready', function () {
     let interstitial;
-    const Interstitial_ID = 'ca-app-pub-2103221276430615/8770789963'; // Replace with actual Ad Unit ID
+    const Interstitial_ID = 'ca-app-pub-2103221276430615/9144928123'; // Replace with actual Ad Unit ID
 
     function loadInterstitial() {
         try {
