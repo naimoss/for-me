@@ -1,0 +1,6 @@
+{
+  "minVersion": "1.0.1",
+  "forceUpdate": true,
+  "updateUrl": "https://play.google.com/store/apps/details?id=your.package.name",
+  "updateMessage": "Please update the app to continue using it. do it"
+}
