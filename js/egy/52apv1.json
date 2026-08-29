@@ -1,0 +1,22 @@
+{
+  "minVersion": "1.0.3",
+  "forceUpdate": false,
+  "updateUrl": "https://play.google.com/store/apps/details?id=com.pam.docs",
+  "updateMessage": " من فضلك قم بعمل تحديث للتطبيق لمواصلة استخدام اللتطبيق فقد قمننا بعمل تحسينات مفيدة كتطةير الدروس و الملخصات و اصلاح بض الاخطاء الكتابية",
+
+  "splashText": "Powered by: univdocs.com",
+
+  "downloadUrl": "{{https://www.youtube.com/watch?v={fileId}}}",
+
+  "promoId": "site-launch-2026",
+  "promoTitle": "موقعنا الجديد",
+  "promoMessage": "هذه رسالة تجريبية 🎉 موقعنا الجديد متاح الآن: دروس، ملخصات، فروض و اختبارات مع قارئ PDF كامل و إمكانية الطباعة.",
+  "promoUrl": "https://www.univdocs.com",
+  "promoButtonText": "زيارة الموقع",
+  "promoCloseText": "إغلاق",
+  "promoIntervalHours": 20,
+  "promoMinSessions": 2,
+  "promoMaxShows": 5,
+  "promoUtm": true,
+  "promoTestMode": true
+}
