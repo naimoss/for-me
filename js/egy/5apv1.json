@@ -1,0 +1,12 @@
+ {
+  "_comment_1": "===== FORCE UPDATE =====",
+  "_comment_minVersion": "Users below this app version are blocked until they update",
+  "minVersion": "1.0.3",
+  "_comment_forceUpdate": "true = block EVERYONE regardless of version. Use with care",
+  "forceUpdate": true,
+  "_comment_updateUrl": "Where the update button sends the user",
+  "updateUrl": "https://play.google.com/store/apps/details?id=com.fivedocs.egy",
+  "_comment_updateMessage": "Text shown inside the update dialog",
+  "updateMessage": " من فضلك قم بعمل تحديث للتطبيق لمواصلة استخدام اللتطبيق فقد قمننا بعمل تحسينات مفيدة كتطةير الدروس و الملخصات و اصلاح بض الاخطاء الكتابية",
+ 
+}
