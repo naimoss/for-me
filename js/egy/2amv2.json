@@ -1,0 +1,11 @@
+ {
+  "_comment_1": "===== FORCE UPDATE =====",
+  "_comment_minVersion": "Users below this app version are blocked until they update",
+  "minVersion": "1.0.3",
+  "_comment_forceUpdate": "true = block EVERYONE regardless of version. Use with care",
+  "forceUpdate": true,
+  "_comment_updateUrl": "Where the update button sends the user",
+  "updateUrl": "https://play.google.com/store/apps/details?id=com.tsegy.docs",
+  "_comment_updateMessage": "Text shown inside the update dialog",
+"updateMessage": " حدّث التطبيق دلوقتي! عملنا تحسينات مفيدة زي تحسين الدروس والملخصات، وضفنا امتحانات لكل المواد. ادعمنا بخمس نجوم ⭐⭐⭐⭐⭐ علشان نكمّل تحسينات وإضافات أكتر"
+ }
